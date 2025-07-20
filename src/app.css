@@ -8,4 +8,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+background-image: linear-gradient(rgb(52, 187, 244), rgb(2, 7, 95));
+}
+
+body {
+   margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+    
 }
