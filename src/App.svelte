@@ -8,11 +8,22 @@
   import DisappearingDuckExample from "./sections/DisappearingDuckExample.svelte";
   import IntersectionObserverSectionCard from "./sections/IntersectionObserverSectionCard.svelte";
   import IntersectionObserverListExample from "./sections/IntersectionObserverListExample.svelte";
+  import TestSection from "./sections/TestSection.svelte";
+  import AverageStats from "./sections/AverageStats.svelte";
+  import JobTransition from "./sections/JobTransition.svelte";
+  import Jobs from "./sections/Jobs.svelte";
+
+//  import Map from "./lib/recycleBin.svelte";
 </script>
 
 <main>
   <TitleSection />
-  <RightAlignedExample />
+
+  <TestSection />
+  <AverageStats />
+  <JobTransition />
+  <Jobs />
+  <!-- <RightAlignedExample />
   <LeftAlignedExample />
   <ImageExample />
 
@@ -20,5 +31,5 @@
   <InteresectionObserverBasicExample />
   <IntersectionObserverAlertExample />
   <DisappearingDuckExample />
-  <IntersectionObserverListExample />
+  <IntersectionObserverListExample /> -->
 </main>
