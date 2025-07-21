@@ -12,6 +12,9 @@
   import AverageStats from "./sections/AverageStats.svelte";
   import JobTransition from "./sections/JobTransition.svelte";
   import Jobs from "./sections/Jobs.svelte";
+  import ToTop from "./lib/toTop.svelte";
+  import Stacked from "./sections/Stacked.svelte";
+  import Conclusion from "./sections/Conclusion.svelte";
 
 //  import Map from "./lib/recycleBin.svelte";
 </script>
@@ -23,6 +26,9 @@
   <AverageStats />
   <JobTransition />
   <Jobs />
+  <!-- <Stacked /> -->
+   <Conclusion />
+  <ToTop />
   <!-- <RightAlignedExample />
   <LeftAlignedExample />
   <ImageExample />

@@ -105,7 +105,15 @@
           of $55,500
         </ObservedArticleText>
       </div>
-      <ArticleText>And a median annual income of $57,539</ArticleText>
+      <div class="stick2">
+        <ArticleText>And a median annual income of $57,539</ArticleText>
+      </div>
+      <div class="stick3">
+        <ArticleText
+          >With 5 to 9 minutes being the most frequent average travel time for
+          its counties</ArticleText
+        >
+      </div>
     {/snippet}
   </Scroller>
 </div>
@@ -113,6 +121,20 @@
 <style>
   .stick {
     position: sticky;
-    top: -40%;
+    top: -30%;
+  }
+
+  .stick2 {
+    position: sticky;
+    top: -10%;
+  }
+
+  .stick3 {
+    position: sticky;
+    top: 10%;
+  }
+
+  .stick4 {
+    position: sticky;
   }
 </style>

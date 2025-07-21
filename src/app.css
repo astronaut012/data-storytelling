@@ -19,7 +19,33 @@ body {
     
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .whiteBg {
   background-color: rgba(255, 255, 255, 0.518);
   text-align: center;
 }
+
+
+    .stop {
+    position: fixed;
+    color: blue;
+  }
+
+      button:hover {
+        cursor: pointer;
+    }
+    button {
+        margin: 2em;
+        display: block;
+        margin: auto;
+                width: 50%;
+        background-color: #ff99fc;
+        color: #004d39;
+        border: solid #9c3fe3 3px;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 8px 8px #8aa6df;
+    }
