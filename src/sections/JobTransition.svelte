@@ -1,5 +1,4 @@
 <script>
-  //import Middle from "../lib/MiddleBar.svelte";
   let show = $state(false);
   function displayMessage() {
     document.getElementById("shark").style.animation = "null";
@@ -7,7 +6,6 @@
   }
 </script>
 
-<!-- <Middle {title} /> -->
 <button id="shark" onclick={displayMessage}>&#129416</button>
 {#if show}
   <p>Beware! There may be a shark lurking around with secret information</p>
