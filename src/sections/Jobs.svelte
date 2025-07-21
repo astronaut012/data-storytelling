@@ -13,17 +13,31 @@
     threshold: [0.85, 0.95],
   };
 
+  const simpleCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      const elem = entry.target;
+
+      if (entry.intersectionRatio >= 0.9) {
+        elem.style.opacity = "1";
+      } else if (entry.intersectionRatio < 0.9) {
+        elem.style.opacity = "0.5";
+      }
+    });
+  };
+
   const displayTexas = (entries, observer) => {
     entries.forEach((entry) => {
       const elem = entry.target;
 
       if (entry.intersectionRatio >= 0.9) {
-        elem.style.backgroundColor = "#e3ff00";
+        // elem.style.backgroundColor = "#ff99fc";
+        elem.style.opacity = "1";
+
         selected = true;
         texas = false;
         chartTitle = "Percentage of Black population in each state";
       } else if (entry.intersectionRatio < 0.9) {
-        elem.style.backgroundColor = "#888888";
+        elem.style.opacity = "0.5";
       }
     });
   };
@@ -33,10 +47,10 @@
       const elem = entry.target;
 
       if (entry.intersectionRatio >= 0.9) {
-        elem.style.backgroundColor = "#e3ff00";
+        elem.style.opacity = "1";
         selected = false;
       } else if (entry.intersectionRatio < 0.9) {
-        elem.style.backgroundColor = "#888888";
+        elem.style.opacity = "0.5";
       }
     });
   };
@@ -46,11 +60,11 @@
       const elem = entry.target;
 
       if (entry.intersectionRatio >= 0.9) {
-        elem.style.backgroundColor = "#e3ff00";
+        elem.style.opacity = "1";
         texas = true;
         chartTitle = "Texas";
       } else if (entry.intersectionRatio < 0.9) {
-        elem.style.backgroundColor = "#888888";
+        elem.style.opacity = "0.5";
       }
     });
   };
@@ -86,11 +100,11 @@
     {/snippet}
 
     {#snippet scrolly()}
-      <ArticleText>
+      <ObservedArticleText callback={simpleCallback} {options}>
         The Black population forms <a
           href="https://blackwealthdata.org/explore/education">12%</a
         > of the total population of the United States
-      </ArticleText>
+      </ObservedArticleText>
       <ObservedArticleText callback={removeTexas} {options}>
         ..which drops to <a href="https://blackwealthdata.org/explore/education"
           >7%</a
@@ -106,12 +120,14 @@
         </ObservedArticleText>
       </div>
       <div class="stick2">
-        <ArticleText>And a median annual income of $57,539</ArticleText>
+        <ObservedArticleText callback={simpleCallback} {options}
+          >And a median annual income of $57,539</ObservedArticleText
+        >
       </div>
       <div class="stick3">
-        <ArticleText
-          >With 5 to 9 minutes being the most frequent average travel time for
-          its counties</ArticleText
+        <ObservedArticleText callback={simpleCallback} {options}
+          >With 5 to 9 minutes being the most frequent average travel time in
+          its counties</ObservedArticleText
         >
       </div>
     {/snippet}
@@ -132,9 +148,5 @@
   .stick3 {
     position: sticky;
     top: 10%;
-  }
-
-  .stick4 {
-    position: sticky;
   }
 </style>

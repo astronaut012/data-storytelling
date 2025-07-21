@@ -39,12 +39,13 @@ html {
     }
     button {
         margin: 2em;
+        font-size: 16px;
         display: block;
         margin: auto;
-                width: 50%;
-        background-color: #ff99fc;
-        color: #004d39;
-        border: solid #9c3fe3 3px;
+                width: 25%;
+        background-color: #21b0f3;
+        color: #0a0909;
+        border: solid #67cef3 3px;
         border-radius: 20px;
         padding: 30px;
         box-shadow: 8px 8px #8aa6df;

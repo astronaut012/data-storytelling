@@ -18,12 +18,12 @@
       const elem = entry.target;
 
       if (entry.intersectionRatio >= 0.9) {
-        elem.style.backgroundColor = "#e3ff00";
+        elem.style.opacity="1";
         fishIsVisible = true;
      //   fish1IsVisible = false;
         setTimeout(expand, 2000);
       } else if (entry.intersectionRatio < 0.9) {
-        elem.style.backgroundColor = "#888888";
+        elem.style.opacity="0.5";
       }
     });
   };
@@ -33,10 +33,10 @@
       const elem = entry.target;
 
       if (entry.intersectionRatio >= 0.9) {
-        elem.style.backgroundColor = "#e3ff00";
+        elem.style.opacity="1";
         fishIsVisible = false;
       } else if (entry.intersectionRatio < 0.9) {
-        elem.style.backgroundColor = "#888888";
+        elem.style.opacity="0.5";
       }
     });
   };
