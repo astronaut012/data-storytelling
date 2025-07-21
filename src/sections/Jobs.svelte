@@ -106,17 +106,19 @@
         > of the total population of the United States
       </ObservedArticleText>
       <ObservedArticleText callback={removeTexas} {options}>
-        ..which drops to <a href="https://blackwealthdata.org/explore/education"
-          >7%</a
+        ..which drops to <a
+          href="https://blackwealthdata.org/explore/population">7%</a
         > of Active MD residents
       </ObservedArticleText>
       <ObservedArticleText callback={displayTexas} {options}
-        >Let's zoom into the state with the highest Black population</ObservedArticleText
+        >Let's zoom into the state with the <a
+          href="https://blackwealthdata.org/explore/education">highest</a
+        > Black population</ObservedArticleText
       >
       <div class="stick">
         <ObservedArticleText callback={zoomTexas} {options}
           >Texas - The Black population here has a median total household debt
-          of $55,500
+          of <a href="https://blackwealthdata.org/explore/assets"> $55,500</a>
         </ObservedArticleText>
       </div>
       <div class="stick2">

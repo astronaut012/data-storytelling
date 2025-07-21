@@ -75,7 +75,7 @@
       </ObservedArticleText>
       <ObservedArticleText callback={showfishCallback} {options}>
         An average of <a href="https://blackwealthdata.org/explore/education"
-          >36%</a
+          >38%</a
         > of the White population of each state in the United States had attained
         a bachelor's degree
       </ObservedArticleText>
