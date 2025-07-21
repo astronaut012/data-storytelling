@@ -10,8 +10,8 @@
 <main>
   <TitleSection />
   <Intro />
-  <AverageStats />
   <JobTransition />
+  <AverageStats />
   <Jobs />
   <Conclusion />
 </main>
